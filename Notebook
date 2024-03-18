@@ -10,3 +10,12 @@ import seaborn as sns
 #Reading in our data
 df = pd.read_excel("/workspaces/Fitbit-Fitness-Tracker/sleepDay_merged_cleaned.xlsx")
 df.head(5)
+
+#Checking for null values in our dataset
+df.isnull().sum()
+
+#Checking for duplicates
+df.duplicated().sum()
+
+#Summary ststistics
+df.describe().T
