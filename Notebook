@@ -19,3 +19,10 @@ df.duplicated().sum()
 
 #Summary ststistics
 df.describe().T
+
+#Reading in the second dataset
+df1 = pd.read_csv("/workspaces/Fitbit-Fitness-Tracker/weightLogInfo_merged_cleaned.xlsx")
+df1.head(5)
+
+##Checking for null values
+df1.isnull().sum()
