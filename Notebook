@@ -26,3 +26,12 @@ df1.head(5)
 
 ##Checking for null values
 df1.isnull().sum()
+
+#Checking for duplicates
+df1.duplicated().sum()
+
+#Summary statistics
+df1.describe().T
+
+#Data types
+df1.dtypes
